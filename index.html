@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calendario</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="contenedor" id="app">
+
+    <!-- Barra superior -->
+    <nav class="pestañas">
+        
+        <button id="btnMes">
+            📅 Calendario Mes
+        </button>
+
+        <button id="btnAnio">
+            🗓 Calendario Año
+        </button>
+
+    </nav>
+
+    <!-- Barra de usuario -->
+    <div class="barra-acceso">
+
+        <button id="btnLogin">
+            🔐 Iniciar sesión
+        </button>
+
+        <button id="btnLogout"style="display:none;">
+            🚪 Salir
+        </button>
+
+        <span id="estadoUsuario">
+            Modo visitante
+        </span>
+
+    </div>
+
+    <!-- Ventana de Login -->
+    <div id="ventanaLogin" class="login-flotante" style="display:none;">
+
+        <h2>Acceso Administrador</h2>
+
+        <input
+            type="password"
+            id="llaveLogin"
+            placeholder="Ingrese la llave">
+
+        <button id="btnEntrar">
+            Entrar
+        </button>
+
+        <button id="btnCancelarLogin">
+            Cancelar
+        </button>
+
+        <p id="errorLogin"></p>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Vista Mensual -->
+    <!-- ========================= -->
+
+    <section id="vistaMes">
+
+        <section class="calendario">
+
+            <div class="encabezado">
+
+                <button id="anterior">
+                    ◀
+                </button>
+
+                <h2 id="mes"></h2>
+
+                <button id="siguiente">
+                    ▶
+                </button>
+
+            </div>
+
+            <div class="dias-semana">
+
+                <div>Dom</div>
+                <div>Lun</div>
+                <div>Mar</div>
+                <div>Mié</div>
+                <div>Jue</div>
+                <div>Vie</div>
+                <div>Sáb</div>
+
+            </div>
+
+            <div id="dias" class="dias"></div>
+
+        </section>
+
+        <section class="eventos">
+
+            <h2>Eventos</h2>
+
+            <h3 id="fechaSeleccionada">
+                Selecciona un día
+            </h3>
+
+            <!-- Solo visible para administrador -->
+            <div id="panelAdmin">
+
+                <input
+                    id="textoEvento"
+                    type="text"
+                    placeholder="Escribe un nuevo evento">
+
+                <button id="guardarEvento">
+                    Agregar Evento
+                </button>
+
+            </div>
+
+            <ul id="listaEventos"></ul>
+
+        </section>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Vista Anual -->
+    <!-- ========================= -->
+
+    <section id="vistaAño" class="oculto">
+
+        <h2 id="tituloAño"></h2>
+
+        <div id="calendarioAño" class="calendario-año"></div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
