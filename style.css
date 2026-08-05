@@ -10,7 +10,7 @@
 }
 
 body{
-    background:#8e7ccf;
+    background:#dddddd;
     min-height:100vh;
 }
 
@@ -32,7 +32,7 @@ body{
     display:flex;
     gap:10px;
     padding:12px;
-    background:#6ca6d6;
+    background:#333;
 }
 
 .pestañas button{
@@ -59,7 +59,7 @@ body{
     justify-content:flex-end;
     align-items:center;
     gap:15px;
-    background:#89b6e0;
+    background:#444;
     color:white;
     padding:12px 20px;
 }
