@@ -74,7 +74,7 @@ body{
 }
 
 .barra-acceso button:hover{
-    background:#2196F3;
+    background:#21d4f3;
     color:white;
 }
 
@@ -142,7 +142,7 @@ body{
 .eventos{
 
     flex:1;
-    background:#ceb99bea;
+    background:#fffbf5ea;
     padding:20px;
     overflow-y:auto;
 
@@ -235,7 +235,7 @@ body{
 
 .hoy{
 
-    background:#4CAF50;
+    background:#af4ca2;
     color:white;
     font-weight:bold;
 
