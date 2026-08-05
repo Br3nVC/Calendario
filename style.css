@@ -59,9 +59,9 @@ body{
     justify-content:flex-end;
     align-items:center;
     gap:15px;
-    background:#b0a1f6
-    color:white;
-    padding:12px 20px;
+    background:#b0a1f6;
+    color: white;
+    padding: 12px 20px;
 }
 
 .barra-acceso button{
